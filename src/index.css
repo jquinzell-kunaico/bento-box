@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .bento-grid {
+    @apply grid gap-2 p-2 bg-slate-800 m-auto mb-4 h-[500px] w-[800px];
+  }
+
+  .bento-row,
+  .bento-col {
+    @apply flex gap-2 grow;
+  }
+
+  .bento-row {
+    @apply col-span-full;
+  }
+
+  .bento-col {
+    @apply flex-col row-span-full;
+  }
+
+  .tile {
+    @apply bg-slate-950 grow rounded-md p-2;
+  }
+}
