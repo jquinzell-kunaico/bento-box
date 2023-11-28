@@ -45,3 +45,14 @@ Badges can look pretty cool either in tiles or as part of the rows
 ### Card
 
 Some make use of cards to create more depth to the page
+
+## Thoughts
+
+Not sure how much we want to provide outside of components that lay things out in a bento box style, but doing so would make things a lot easier.
+
+We could build this in 2 approaches:
+
+- tailwind plugin like Daisy
+- qwik component library
+
+Using just tailwind I think eliminates all the issues we were having with dynamic tailwind classes and eliminates the need for a tailwind runtime. I'm not 100% sure on this or the other drawbacks it may have.
